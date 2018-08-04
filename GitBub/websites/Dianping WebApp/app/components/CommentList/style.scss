@@ -1,0 +1,18 @@
+.comment-block{
+    .comment-item{
+        border-bottom: 1px solid rgb(212, 205, 205);
+        padding-bottom: 20px;
+        .userinfo{
+            font-size: 17px;
+            color: gray;
+        }
+        .star{
+            line-height: 2;
+        }
+        .content{
+            font-size: 18px;
+            color: gray;
+            line-height: 2;
+        }
+    }
+}

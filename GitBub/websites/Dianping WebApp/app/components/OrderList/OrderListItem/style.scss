@@ -1,0 +1,58 @@
+.orderlist-item-block{
+
+    .item{
+        position: relative;
+        margin-bottom: 15px;
+        .img img{
+            width: 130px;
+        }
+        .content{
+            position: absolute;
+            top: 0;
+            left: 140px;
+            .info{
+                margin-right: 85px;
+                div{
+                    font-size: 15px;
+                    line-height: 1.8;
+                    color: gray;
+                }
+            }
+            .btn {
+                position: absolute;
+                right: -40px;
+                top: 30px;
+                button{
+                    width: 80px;
+                    height: 30px;
+                    background: #e85a5a;
+                    color: white;
+                    border: none;
+                }
+                .disabled{
+                    background: gray;
+                }
+            }
+        }
+        .comment-editor{
+            padding: 10px 0;
+            textarea{
+                width: 100%;
+                height: 90px;
+            }
+            button{
+                width: 80px;
+                height: 30px;
+                border: none;
+                color: white;
+            }
+            .submit{
+                background: #e85a5a;
+            }
+            .cancle{
+                background: gray;
+            }
+        }
+        
+    }
+}
