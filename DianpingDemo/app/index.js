@@ -1,19 +1,15 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import Todo from 'Components/todo';
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import RouteMap from 'Router/routeMap'
+import configureStore from 'Store/configureStore'
 
-export default class App extends React.Component{
-    render(){
-        return (
-            <div>
-            	<Todo />
-            </div>
-        )
-    }
-}
+import 'Static/common/css/Icon.css'
 
-
-ReactDOM.render(
-    <App />,
-    document.getElementById("root")
-);
+const store = configureStore();
+render(
+    <Provider store={store}>
+        <RouteMap/ >
+    </Provider>,
+    document.getElementById('root')
+)

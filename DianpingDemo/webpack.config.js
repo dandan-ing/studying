@@ -97,7 +97,17 @@ module.exports = {
     resolve: {
         alias: {
             Mock: path.resolve(__dirname, 'mock'),
-            Components: path.resolve(__dirname, 'app/components')
+            Actions: path.resolve(__dirname, 'app/actions'),
+            Components: path.resolve(__dirname, 'app/components'),
+            Containers: path.resolve(__dirname, 'app/containers'),
+            Config: path.resolve(__dirname, 'app/config'),
+            Constants: path.resolve(__dirname, 'app/constants'),
+            Helper: path.resolve(__dirname, 'app/helper'),
+            Router: path.resolve(__dirname, 'app/router'),
+            Reducers: path.resolve(__dirname, 'app/reducers'),
+            Static: path.resolve(__dirname, 'app/static'),
+            Store: path.resolve(__dirname, 'app/store'),
+            Util: path.resolve(__dirname, 'app/util'),
         }
     }
 };
