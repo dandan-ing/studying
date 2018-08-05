@@ -1,0 +1,23 @@
+.login-block{
+    .login-input{
+        margin: 200px auto 0 auto;
+        .input-item{
+            margin: 0 auto;
+            width: 280px;
+            margin-bottom:15px;
+            input{
+                width: 100%;
+                height: 30px;
+            }
+        }
+        .btn-login{
+            margin: 0 auto;
+            width: 280px;
+            height: 40px;
+            border: none;
+            background: #e85a5a;
+            color: white;
+            border-radius: 2px;
+        }
+    }
+}

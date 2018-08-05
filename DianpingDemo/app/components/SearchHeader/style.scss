@@ -1,0 +1,17 @@
+.search-input-block{
+    height: 55px;
+    line-height: 55px;
+    background: #e85a5a;
+    padding: 0 10px;
+    color: white;
+    .header-center{
+        margin: 0 40px 0 40px;
+        input{
+            border:none;
+            border-radius: 15px;
+            height: 30px;
+            width:100%;
+            padding: 0 8px;
+        }
+    }
+}

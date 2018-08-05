@@ -1,0 +1,46 @@
+.detail-block{
+    padding: 10px;
+    margin-bottom: 20px;
+    .detail-info{
+        border-bottom: 1px solid rgb(212, 205, 205);
+        height: 160px;
+        .detail-img{
+            float: left;
+            img{
+                width: 160px;
+            }
+        }
+        .detail-content{
+            margin-left: 170px;
+            .title{
+                padding: 5px; 
+                font-size: 25px;
+                font-family: '黑体';
+            }
+            .star-price{
+                height: 30px;
+                padding: 0 5px;
+                .star{
+                    float: left;
+                    margin-right:25px; 
+                }
+                .price{
+                    font-size: 18px;
+                    color: gray;
+                }
+            }
+            .sub-title{
+                font-size:18px;
+                color: gray;
+                padding: 0 5px;
+            }
+    
+        }
+    }
+    
+    .detail-detail{
+        font-size: 16px;
+        color: gray;
+        line-height: 1.5;
+    }
+}

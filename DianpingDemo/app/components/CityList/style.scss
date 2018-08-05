@@ -1,0 +1,18 @@
+.citylist-block{
+    padding: 10px;
+    .content{
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3% ;
+        .item{
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid rgb(199, 185, 185);
+            text-align: center;
+        }
+    }
+    .title{
+        font-size: 17px;
+        font-family: '黑体',
+        
+    }
+}
