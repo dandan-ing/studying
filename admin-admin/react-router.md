@@ -28,9 +28,11 @@ react-react基础
 版本： react-router-dom@v4.2.2，动态路由，纯react组件；
 常见组件：
     <BrowerRouter>,<HashRouter>  路由方式
-    <Router>  路由规则
+    <Route>  路由规则
     <Switch>  路由选项
     <Link>,<NavLink>  跳转导航
     <Redirect> 自动跳转
 
+<Route path="/a/:id">
+获取参数：this.props.match.params.id
 
