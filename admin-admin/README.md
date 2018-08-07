@@ -82,7 +82,7 @@ Object.assign(obj1,obj2,...):浅拷贝
 export defalut xx；导出的模块，在导入时可任意定义成其他名称；
 
 #### （7）Others:
-<script type="module" src=""/>可以让浏览器识别es6
+    <script type="module" src=""/>可以让浏览器识别es6
 
 ### 4. 本地存储
 #### （1）cookie
@@ -120,11 +120,16 @@ sessionId通常存储在cookie里；
 #### （1）webpack
 安装：yarn add webpack@2.7
 配置：webpack.config.js
-##### a. 配置入口，出口文件
-##### b. 安装配置html文件处理（插件htmlwebpackplugin yarn add html-webpack-plugin@3.2.0），
-##### c. 安装配置脚本处理（babel相关，yarn add babel-core@6.26.0 babel-preset-env@1.6.1 babel-load@7.1.4 babel-preset-react@6.24.1）,安装react yarn add react@16.3.2
-##### d. 安装配置css处理（yarn add style-loader@0.21.0 css-loader@0.28.11）
-##### e. 安装extract-text-webpack-plugin  yarn add extract-text-webpack-plugin@3.0.2
+##### 1. 配置入口，出口文件
+##### 2. 安装配置html文件处理
+插件htmlwebpackplugin yarn add html-webpack-plugin@3.2.0
+##### 3. 安装配置脚本处理
+babel相关，yarn add babel-core@6.26.0 babel-preset-env@1.6.1 babel-load@7.1.4 babel-preset-react@6.24.1
+安装react yarn add react@16.3.2
+##### 4. 安装配置css处理
+yarn add style-loader@0.21.0 css-loader@0.28.11
+##### 5. 安装extract-text-webpack-plugin  
+yarn add extract-text-webpack-plugin@3.0.2
 配置css
     {
         test: /\.css$/,
@@ -133,7 +138,8 @@ sessionId通常存储在cookie里；
             use:'css-loader'
         })
     }
-##### f. 安装配置sass yarn add sass-loader@6.0.6 --dev
+##### 6. 安装配置sass 
+yarn add sass-loader@6.0.6 --dev
     {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
@@ -146,9 +152,9 @@ Tip:安装node-sass时，报错gyp verb `which` failed  python2 { Error: not fou
 处理方法：
 安装cnpm    npm install -g cnpm --registry=https://registry.npm.taobao.org
 使用cnpm安装node-scss   cnpm install node-sass
-##### g. 图片处理
+##### 7. 图片处理
 yarn add file-loader@1.1.6 url-loader@0.6.2 --dev
-##### h. 安装字体图标
+##### 8. 安装字体图标
     yarn add font-awesome 
     配置：
     {
@@ -162,10 +168,10 @@ yarn add file-loader@1.1.6 url-loader@0.6.2 --dev
             }
         ]
     }
-##### i. 引用webpack提出公共模块
+##### 9. 引用webpack提出公共模块
     webpack.optimiza.CommmonsChunkPlugin
-##### j. 文件归类，js文件放于js文件夹等
-##### k. 开发环境热加载，安装webpack-dev-server
+##### 10. 文件归类，js文件放于js文件夹等
+##### 11. 开发环境热加载，安装webpack-dev-server
     yarn add webpack-dev-server@2.9.7 --dev
     可指定端口号
 #### （2） 配置scripts
@@ -179,7 +185,10 @@ yarn add file-loader@1.1.6 url-loader@0.6.2 --dev
     git add .   添加所有文件
     git commit -am "commit" 添加提交备注信息
     git push origin master 提交至远程分支master
-    
+    git tag ""
+    git pull request 在界面操作，可关闭git
+
+
 
 
 
