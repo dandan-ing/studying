@@ -18,7 +18,7 @@ export default class SideNav extends React.Component{
                             <ul className="nav side-menu">
                                 <li>
                                     <NavLink to="/">
-                                        <i class="fa fa-laptop"></i> 
+                                        <i className="fa fa-laptop"></i> 
                                         <span>首页</span>
                                     </NavLink>
                                 </li>
