@@ -746,6 +746,11 @@ a {
 	padding: 12px 20px
 }
 
+.top_nav .dropdown-menu li span {
+	width: 100%;
+	padding: 12px 20px
+}
+
 .top_nav li a i {
 	font-size: 15px
 }
@@ -869,6 +874,14 @@ a {
 	line-height: 32px
 }
 
+.dropdown-menu>li>span{
+	display: block;
+	clear: both;
+    font-weight: 400;
+	line-height: 1.42857143;
+	    white-space: nowrap;
+}
+
 .site_title {
 	font-weight: 400;
 	font-size: 22px;
@@ -936,6 +949,16 @@ a {
 }
 
 .toggle a i {
+	font-size: 26px
+}
+
+.toggle span {
+	padding: 15px 15px 0;
+	margin: 0;
+	cursor: pointer
+}
+
+.toggle span i {
 	font-size: 26px
 }
 

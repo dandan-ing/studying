@@ -12,21 +12,21 @@ export default class Topdiv extends React.Component{
             <div className="top_nav">
                 <div className="nav_menu">
                     <div className="nav toggle">
-                        <a id="menu_toggle">
+                        <span>
                             <i className="fa fa-bars"></i>
-                        </a>
+                        </span>
                     </div>
                     <ul className="nav navbar-nav navbar-right">
                         <li>
-                            <a href="javascript:;" className="user-profile dropdown-toggle">
+                            <Link to="/" className="user-profile dropdown-toggle">
                                 <i className="fa fa-user"></i> 欢迎，Admin 
                                 <span className="fa fa-angle-down"></span>
-                            </a>
+                            </Link>
                             <ul className="dropdown-menu dropdown-usermenu pull-right">
                                 <li>
-                                    <a onClick={()=>this.clickLogoutHandle()}>
+                                    <span onClick={()=>this.clickLogoutHandle()}>
                                         <i className="fa fa-sign-out pull-right"></i> 退出登录
-                                    </a>
+                                    </span>
                                 </li>
                             </ul>
                         </li>

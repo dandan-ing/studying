@@ -8,7 +8,7 @@ export default class Footer extends React.Component{
         return(
             <footer>
                 <div className="pull-right">
-                    Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+                    Admin-Amdin by DD
                 </div>
                 <div className="clearfix"></div>
             </footer>
