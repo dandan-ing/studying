@@ -239,8 +239,7 @@ const MenuList = [
     },
     {
         title: '订单管理',
-        key: '/admin/order',
-        icon: '',
+        key: '/admin/order/orderlist'
     }
     
 ]

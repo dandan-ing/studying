@@ -1,6 +1,15 @@
 @import './default.less';
 @import './loading.less';
 
+.clearfix{
+    &::after{
+        content: '';
+        clear: both;
+        display: block;
+        visibility: hidden;
+    }
+}
+
 .container{
     display: flex;
     .nav-left{
@@ -20,4 +29,14 @@
         }
     }
 
+}
+
+.simple-page{
+    .header-top{
+        background: #1890ff;
+        color: black
+    }
+    .ant-form,.ant-col-12,.weather{
+        display: block;
+    }
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Card, Table, Modal,message, Button} from 'antd';
 import '../admincommon.less';
-import { ajax ,getRequestData} from '../../../axios/index.js';
+import { ajax ,getRequestData} from '../../../axios';
 import Util from '../../../utils/utils';
 
-import '../../../mock/table.js'
+import '../../../mock/table'
 
 export default class Paginations extends React.Component{
     constructor(props) {

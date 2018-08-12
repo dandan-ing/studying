@@ -1,5 +1,5 @@
 import React from 'react';
-import MenuList from './../../config/menuConfig';
+import MenuList from '../../config/menuConfig';
 import {Menu,Icon} from 'antd';
 import './index.less';
 import { NavLink } from 'react-router-dom';
@@ -47,7 +47,7 @@ export default class Navleft extends React.Component{
 
     render(){
         return(
-            <div>
+            <div className="nav-left">
                 <div className="logo">
                     <img src="/assets/logo.png"/>
                     <h1>Orange Admin</h1>

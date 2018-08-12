@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './components/Header/index';
+import Header from './components/Header';
 import Footer from './components/Footer';
 import NavLeft from './components/NavLeft';
 import { Row,Col } from 'antd';

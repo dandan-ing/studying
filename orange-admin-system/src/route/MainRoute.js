@@ -2,6 +2,7 @@ import React from 'react';
 import { HashRouter, Route, Switch} from 'react-router-dom';
 import NotFound from '../pages/notfound';
 import Admin from '../admin';
+import Common from '../common';
 import Buttons from '../pages/admin/ui/buttons';
 import Home from '../pages/home';
 import Modals from '../pages/admin/ui/modals';
@@ -17,6 +18,9 @@ import Paginations from '../pages/admin/data/pagination';
 
 import Tables from '../pages/admin/data/table';
 
+import OrderList from '../pages/order/orderlist';
+import OrderDetail from '../pages/order/OrderDetail';
+
 export default class MainRoute extends React.Component{
     constructor(props) {
         super(props)
@@ -26,7 +30,7 @@ export default class MainRoute extends React.Component{
         return(
             <HashRouter>
                 <Switch>
-                    <Route path="/" render = {()=>{
+                    <Route path="/admin" render = {()=>{
                         return (
                             <Admin>
                                 <Switch>
@@ -46,10 +50,20 @@ export default class MainRoute extends React.Component{
                                     <Route path="/admin/data/table" component={Tables}/>
                                     <Route path="/admin/data/pagination" component={Paginations}/>
 
+                                    <Route path="/admin/order/orderlist" component={OrderList}/>
+
                                     <Route component={NotFound}/>
                                 </Switch>
                             </Admin>
                         )
+                    }}/>
+                    <Route path="/common" render={() => {
+                        return (
+                        <Common>
+                            <Route path="/common/order/detail/:orderId" component={OrderDetail}/>
+
+                            <Route component={NotFound}/>
+                        </Common>)
                     }}/>
                     <Route component={NotFound}/> 
                 </Switch>

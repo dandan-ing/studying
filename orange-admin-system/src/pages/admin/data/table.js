@@ -1,9 +1,9 @@
 import React from 'react';
 import { Card, Table, Modal,message, Button, Badge} from 'antd';
 import '../admincommon.less';
-import { ajax ,getRequestData} from '../../../axios/index.js';
+import { ajax ,getRequestData} from '../../../axios';
 
-import '../../../mock/table.js'
+import '../../../mock/table'
 
 export default class Tables extends React.Component{
     constructor(props) {
