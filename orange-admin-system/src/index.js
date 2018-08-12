@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Admin from './admin';
 import registerServiceWorker from './registerServiceWorker';
+import MainRoute from './route/MainRoute';
 
-ReactDOM.render(<Admin />, document.getElementById('root'));
+ReactDOM.render(<MainRoute />, document.getElementById('root'));
 registerServiceWorker();
