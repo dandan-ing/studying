@@ -1,4 +1,4 @@
-import {CHANDE_INPUT_VALUE, ADD_TODOLIST_ITEM, DEL_TODOLIST_ITEM} from './store/actionTypes';
+import {CHANDE_INPUT_VALUE, ADD_TODOLIST_ITEM, DEL_TODOLIST_ITEM,INIT_TODO_LIST} from './store/actionTypes';
 
 const defaultState = {
     inputValue:'',
@@ -18,6 +18,9 @@ export default (state = defaultState, action) => {
         case DEL_TODOLIST_ITEM:
             newState.list.splice(action.index, 1);
             return newState; 
+        case INIT_TODO_LIST:
+            newState.list = action.data;
+            return newState;
         default:
             return state;
     }

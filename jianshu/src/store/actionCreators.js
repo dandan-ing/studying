@@ -1,4 +1,4 @@
-import { CHANDE_INPUT_VALUE,ADD_TODOLIST_ITEM,DEL_TODOLIST_ITEM} from './actionTypes';
+import { CHANDE_INPUT_VALUE,ADD_TODOLIST_ITEM,DEL_TODOLIST_ITEM,INIT_TODO_LIST} from './actionTypes';
 
 export const changeHandleAction = (value) => ({
     type: CHANDE_INPUT_VALUE,
@@ -12,5 +12,10 @@ export const addHandleAction = () => ({
 export const delHandleAction = (index) => ({
     type: DEL_TODOLIST_ITEM,
     index
+})
+
+export const initListAction = (data) => ({
+    type: INIT_TODO_LIST,
+    data
 })
 
