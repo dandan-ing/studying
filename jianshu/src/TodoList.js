@@ -1,8 +1,8 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import { Input, Button, List} from 'antd';
 import store from "./store";
 import {changeHandleAction, addHandleAction,delHandleAction} from './store/actionCreators';
+import TodoListUI from './TodoListUI';
 
 export default class TodoList extends React.Component{
     constructor(props) {
@@ -16,35 +16,30 @@ export default class TodoList extends React.Component{
     }
 
     changeHandle(e) {
-        const action = changeHandleAction(e.target.value);
+        const value = e.target.value;
+        const action = changeHandleAction(value);
         store.dispatch(action);
     }
 
-    clickHandle = () => {
+    clickHandle() {
         const action = addHandleAction();
         store.dispatch(action);
     }
 
-    delhandle = (index) => {
+    delhandle(index){
         const action = delHandleAction(index);
         store.dispatch(action);
     }
 
     render(){
-        return(
-            <div style={{margin:'10px'}}>
-               <Input 
-                value={this.state.inputValue} 
-                placeholder="todo info" 
-                style={{width:'300px',marginRight:'10px',marginBottom:'10px'}}
-                onChange={this.changeHandle.bind(this)}
-                /> 
-               <Button type="primary" onClick={this.clickHandle}>提交</Button>
-               <List
-                    bordered
-                    dataSource = {this.state.list}
-                    renderItem={(item,index)=>(<List.Item>{item}<Button onClick={this.delhandle.bind(this,index)}>删除</Button></List.Item>)}
-                    style={{width:'400px'}}
+        return (
+            <div>
+                <TodoListUI 
+                    inputValue={this.state.inputValue}
+                    changeHandle={this.changeHandle.bind(this)}
+                    clickHandle={this.clickHandle.bind(this)}
+                    delhandle={this.delhandle.bind(this)}
+                    list = {this.state.list}
                 />
             </div>
         )
