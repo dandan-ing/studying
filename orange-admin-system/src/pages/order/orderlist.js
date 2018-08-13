@@ -17,6 +17,36 @@ export default class OrderList extends React.Component{
         }
     }
 
+    formList = [
+        {
+            type: 'select',
+            label: '城市',
+            field: '',
+            placeholder: '全部',
+            initialValue: '1',
+            width: 200,
+            list:[{id:1,name:'上海'},{id:2,name:'上海2'},{id:3,name:'上海3'}]
+        },
+        {
+            type: 'timeRange',
+            label: '订单时间',
+            field: '',
+            placeholder: '全部',
+            initialValue: '1',
+            width: 200,
+            list:[{id:1,name:'上海'},{id:2,name:'上海2'},{id:3,name:'上海3'}]
+        },
+        {
+            type: 'timeRange',
+            label: '订单状态',
+            field: '',
+            placeholder: '全部',
+            initialValue: '1',
+            width: 200,
+            list:[{id:1,name:'上海'},{id:2,name:'上海2'},{id:3,name:'上海3'}]
+        }
+    ]
+
     componentDidMount() {
         this.getRequestList();
     }

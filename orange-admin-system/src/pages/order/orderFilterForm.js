@@ -29,7 +29,7 @@ class OrderFilterForm extends React.Component{
                         <FormItem label="城市">
                             {
                                 getFieldDecorator('city')(
-                                    <Select>
+                                    <Select placeholder="全部">
                                         <Option value="">全部</Option>
                                         <Option value="2500">上海</Option>
                                         <Option value="1602">南京</Option>
@@ -37,7 +37,7 @@ class OrderFilterForm extends React.Component{
                                 )
                             }
                         </FormItem>
-                        <FormItem>
+                        <FormItem label="订单时间">
                             {
                                 getFieldDecorator('startTime')(
                                     <DatePicker
@@ -60,7 +60,7 @@ class OrderFilterForm extends React.Component{
                         <FormItem label="订单状态">
                             {
                                 getFieldDecorator('status')(
-                                    <Select>
+                                    <Select placeholder="全部">
                                         <Option value="">全部</Option>
                                         <Option value="1">未付款</Option>
                                         <Option value="2">需求确认</Option>
