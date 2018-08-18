@@ -67,7 +67,7 @@ h2 {
     color: #222222;
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
-    margin: 0px 0 25px 0;
+    /*margin: 0px 0 25px 0;*/
     text-align: center;
     text-transform: uppercase;
 }
@@ -689,7 +689,7 @@ a.contact_btn:hover {
 
 
 #Portfolio {
-    padding: 60px 0px;
+    padding: 30px 0px;
 }
 
 .Portfolio-nav {
@@ -907,9 +907,8 @@ background-position-y: 70px;
 	padding-left:0px;
 }
 .about-us p{
-	/*font-size: 0.9375em;*/
 	line-height: 1.625em;
-	padding: 15px 0;
+	padding: 6px 0;
 }
 .about-us .about-us-list{
 	list-style: none;
@@ -941,7 +940,7 @@ background-position-y: 70px;
 /* Team
 ---------------------------------*/
 .team_section {
-    max-width: 993px;
+    /*max-width: 993px;*/
     margin: 0 auto;
 }
 
@@ -966,25 +965,7 @@ background-position-y: 70px;
     width: auto;
     height: auto;
     position: relative;
-    border-radius: 50%;
-    margin: 0px 3px 25px 3px;
-}
-/*
-.team_box_shadow {
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    position: absolute;
-    width: 100%;
-    height: 26%;
-    z-index: 10;
-    bottom: 0px;
-} */
-
-.team_box_shadow a {
-    display: block;
-    width: 100%;
-    height: 100%; 
+    margin: 0px 3px 10px 3px;
 }
 
 .team_box:hover .team_box_shadow {
@@ -998,9 +979,18 @@ background-position-y: 70px;
 
 .team_box img {
     display: block;
-    border-radius: 0%;
-    width: 90%;
+    border-radius:3%;
     margin: 0 auto;
+}
+.team_section .title{
+    padding: 0 3px;
+    font-size: 15px;
+    color: #766143;
+    height: 20px;
+    line-height: 20px;
+}
+.team_section .time{
+    float: right;
 }
 
 .team_box ul {
@@ -1024,10 +1014,10 @@ background-position-y: 70px;
     display: inline-block;
     margin: 0 11px;
 	width: 34px; 
-border-radius: 50%;
-background: #fff;
-padding: 10px 0 4px;
-margin-bottom: 5px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 10px 0 4px;
+    margin-bottom: 5px;
 }
 
 .team_box ul li a { 
@@ -1058,6 +1048,10 @@ margin-bottom: 5px;
 .team_box ul li a.fa-google-plus:hover {
     color: #dd4b39;
 }
+.team .more_box{
+    margin:45px 0 10px 0;
+
+}
  
 #aboutUs {
     padding: 20px 0;
@@ -1066,17 +1060,17 @@ margin-bottom: 5px;
 /* Contact
 ---------------------------------*/
 .page_section.contact {
-    padding: 90px 0 100px;
+    padding: 50px 0 50px;
 }
  
 .contact_section {
-    margin: 0 0 60px 0;
+    margin: 0 0 30px 0;
 }
 
 .contact_section h2 {
     font-size: 40px;
     color: #ffffff;
-    margin: 0 0 50px 0;
+    margin: 0 0 10px 0;
     text-transform: uppercase;
 }
 
@@ -1161,11 +1155,11 @@ margin-bottom: 5px;
 }
 
 .contact_info p {
-    line-height: 28px;
+    line-height: 30px;
     display: block;
     font-size: 16px;
     color: #ffffff;
-    margin: 0 0 30px;
+    /*margin: 0 0 30px;*/
 }
 
 .social_links {
@@ -1253,6 +1247,20 @@ margin-bottom: 5px;
     letter-spacing: 0px;
     background: #ED5441;
     border-radius: 3px;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 0px;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.input-btn-radius{
+    padding: 12px 30px;
+    border-radius: 40px;
+    letter-spacing: 0px;
+    background: #ED5441;
     color: #ffffff;
     font-size: 16px;
     text-transform: uppercase;
@@ -1363,6 +1371,12 @@ margin-bottom: 5px;
 .container.portfolio_title {
     padding-bottom: 0px;
 }
+.portfolio_title h6{
+    margin:0;
+}
+.label-content{
+    display: inline-block;
+}
 
 #portfolio {
     padding: 20px 0 10px;
@@ -1436,14 +1450,21 @@ margin-bottom: 5px;
     text-transform: uppercase;
 }
 
+.section-title p{
+    height: 26px;
+    line-height: 26px;
+}
+.section-title {
+    margin-bottom: 10px;
+}
 .section-title span {
-    display: block;
+    /*display: block;
     color: #888888;
     font-family: 'Open Sans',sans-serif;
     font-size: 16px;
     font-weight: 400;
     margin: 0 0 60px;
-    text-align: center;
+    text-align: center;*/
 }
 
 
@@ -2063,4 +2084,83 @@ width: 99%;
 .read_more2{
 display:none;
 }
+}
+
+.tools {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    z-index: 999;
+}
+.tools li {
+    width: 40px;
+    height: 38px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.tools .__qq, .tools .__tel,.tools .__wxind {
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    display: none;
+}
+
+.tools .contact_tel {
+    background: url("../img/tools/slide-tel.png") no-repeat right;
+}
+
+.tools .contact_tel:hover {
+    cursor: pointer;
+    background: url("../img/tools/slide-tel-active.png") no-repeat right;
+}
+
+.tools .__tel {
+    width: 212px;
+    height: 43px;
+    line-height: 43px;
+    top: 0;
+    background: url("../img/tools/tel-bg.png") no-repeat center;
+    padding-left: 20px;
+    font-size: 14px;
+    color: black;
+}
+
+.tools .contact_tel:hover .__tel {
+    display: block;
+    cursor: pointer;
+}
+
+.tools .contact_wxind {
+    background: url("../img/tools/slide-wxind.png") no-repeat right;
+}
+
+.tools .contact_wxind:hover {
+    cursor: pointer;
+    background: url("../img/tools/slide-wxind-active.png") no-repeat right;
+}
+
+.tools .__wxind {
+    width: 134px;
+    height: 121px;
+    top: -80px;
+}
+
+.tools .contact_wxind:hover .__wxind {
+    display: block;
+    cursor: pointer;
+}
+
+.tools .contact_up {
+    background: url("../img/tools/slide-up.png") no-repeat right;
+}
+
+.tools .contact_up:hover {
+    cursor: pointer;
+    background: url("../img/tools/slide-up-active.png") no-repeat right;
+}
+
+.footer_wrapper .winxin img {
+    width: 100px;
+    margin-top: 10px;
 }
